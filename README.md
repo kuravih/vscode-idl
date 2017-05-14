@@ -1,6 +1,6 @@
 # IDL Language extension for Microsoft Visual Studio Code
 
-Simple language extension using the idl grammar for textmate from [idl.tmbundle](https://github.com/mgalloy/idl.tmbundle) by @mgalloy
+Simple language extension for Microsoft Visual Studio Code using the idl grammar from textmate bundle from [idl.tmbundle](https://github.com/mgalloy/idl.tmbundle) by @mgalloy
 
 ## Release Notes
 
