@@ -4,8 +4,12 @@ Simple language extension for Microsoft Visual Studio Code using the idl grammar
 
 ## Release Notes
 
-Just added the the grammar, which provides syntax highlighting and nothing else.
+Added line and block comments
+
+### 0.0.2
+
+line and block comments
 
 ### 0.0.1
 
-Initial release
+Initial release. Just added the the grammar, which provides syntax highlighting and nothing else.
