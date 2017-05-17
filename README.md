@@ -4,7 +4,11 @@ Simple language extension for Microsoft Visual Studio Code using the idl grammar
 
 ## Release Notes
 
-Added line and block comments
+Added code snippets
+
+### 0.0.3
+
+Added code snippets for if, else, for, while, foreach. Single and multi-line versions
 
 ### 0.0.2
 
