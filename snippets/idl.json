@@ -1,0 +1,114 @@
+{
+  "if … then …": {
+    "prefix": "if",
+    "body": [
+      "if ${1:expression} then ${0:statement}"
+    ],
+    "description": "Single-line if statement"
+  },
+  "if … then begin … endif": {
+    "prefix": "if",
+    "body": [
+      "if ${1:expression} then begin",
+      "\t${0:statement}",
+      "endif"
+    ],
+    "description": "Multi-line if statement"
+  },
+  "else …": {
+    "prefix": "else",
+    "body": [
+      "else ${0:statement}"
+    ],
+    "description": "Single-line else"
+  },
+  "else begin … endelse": {
+    "prefix": "else",
+    "body": [
+      "else begin",
+      "\t${0:statement}",
+      "endelse"
+    ],
+    "description": "Multi-line else"
+  },
+  "for …=…,… do …": {
+    "prefix": "for",
+    "body": [
+      "for ${1:variable} = ${2:init}, ${3:limit} do ${0:statement}"
+    ],
+    "description": "Single-line for loop with unit increment"
+  },
+  "for …=…,… do begin … endfor": {
+    "prefix": "for",
+    "body": [
+      "for ${1:variable} = ${2:init}, ${3:limit} do begin",
+      "\t${0:statements}",
+      "endfor"
+    ],
+    "description": "Multi-line for loop with unit increment"
+  },
+  "for …=…,…,… do …": {
+    "prefix": "for",
+    "body": [
+      "for ${1:variable} = ${2:init}, ${3:limit}, ${4:increment} do ${0:statement}"
+    ],
+    "description": "Single-line for loop with non-unit increment"
+  },
+  "for …=…,…,… do begin … endfor": {
+    "prefix": "for",
+    "body": [
+      "for ${1:variable} = ${2:init}, ${3:limit}, ${4:increment} do begin",
+      "\t${0:statements}",
+      "endfor"
+    ],
+    "description": "Multi-line for loop with non-unit increment"
+  },
+  "while … do …": {
+    "prefix": "while",
+    "body": [
+      "while ${1:expression} do ${0:statement}"
+    ],
+    "description": "Single-line while loop"
+  },
+  "while … do begin … endwhile": {
+    "prefix": "while",
+    "body": [
+      "while ${1:expression} do begin",
+      "\t${0:statement}",
+      "endwhile"
+    ],
+    "description": "Multi-line while loop"
+  },
+  "foreach …,… do …": {
+    "prefix": "foreach",
+    "body": [
+      "foreach ${1:element}, ${2:variable} do ${0:statement}"
+    ],
+    "description": "Single-line foreach without element index"
+  },
+  "foreach …,… do begin … endforeach": {
+    "prefix": "foreach",
+    "body": [
+      "foreach ${1:element}, ${2:variable} do begin",
+      "\t${0:statement}",
+      "endforeach"
+    ],
+    "description": "Multi-line foreach without element index"
+  },
+  "foreach …,…,… do …": {
+    "prefix": "foreach",
+    "body": [
+      "foreach ${1:element}, ${2:variable}, ${3:index} do ${0:statement}"
+    ],
+    "description": "Single-line foreach with element index"
+  },
+  "foreach …,…,… do begin … endforeach": {
+    "prefix": "foreach",
+    "body": [
+      "foreach ${1:element}, ${2:variable}, ${3:index} do begin",
+      "\t${0:statement}",
+      "endforeach"
+    ],
+    "description": "Multi-line foreach with element index"
+  }
+}
