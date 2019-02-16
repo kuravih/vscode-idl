@@ -4,7 +4,7 @@
     "body": [
       "if ${1:expression} then ${0:statement}"
     ],
-    "description": "Single-line if statement"
+    "description": "If statement (single-line)"
   },
   "if … then begin … endif": {
     "prefix": "if",
@@ -13,14 +13,14 @@
       "\t${0:statement}",
       "endif"
     ],
-    "description": "Multi-line if statement"
+    "description": "If statement (multi-line)"
   },
   "else …": {
     "prefix": "else",
     "body": [
       "else ${0:statement}"
     ],
-    "description": "Single-line else"
+    "description": "Else statement (single-line)"
   },
   "else begin … endelse": {
     "prefix": "else",
@@ -29,14 +29,14 @@
       "\t${0:statement}",
       "endelse"
     ],
-    "description": "Multi-line else"
+    "description": "Else statement (multi-line)"
   },
   "for …=…,… do …": {
     "prefix": "for",
     "body": [
       "for ${1:variable} = ${2:init}, ${3:limit} do ${0:statement}"
     ],
-    "description": "Single-line for loop with unit increment"
+    "description": "For loop with unit increment (single-line)"
   },
   "for …=…,… do begin … endfor": {
     "prefix": "for",
@@ -45,14 +45,14 @@
       "\t${0:statements}",
       "endfor"
     ],
-    "description": "Multi-line for loop with unit increment"
+    "description": "For loop with unit increment (multi-line)"
   },
   "for …=…,…,… do …": {
     "prefix": "for",
     "body": [
       "for ${1:variable} = ${2:init}, ${3:limit}, ${4:increment} do ${0:statement}"
     ],
-    "description": "Single-line for loop with non-unit increment"
+    "description": "For loop with non-unit increment (single-line)"
   },
   "for …=…,…,… do begin … endfor": {
     "prefix": "for",
@@ -61,14 +61,14 @@
       "\t${0:statements}",
       "endfor"
     ],
-    "description": "Multi-line for loop with non-unit increment"
+    "description": "For loop with non-unit increment (multi-line)"
   },
   "while … do …": {
     "prefix": "while",
     "body": [
       "while ${1:expression} do ${0:statement}"
     ],
-    "description": "Single-line while loop"
+    "description": "While loop (single-line)"
   },
   "while … do begin … endwhile": {
     "prefix": "while",
@@ -77,14 +77,14 @@
       "\t${0:statement}",
       "endwhile"
     ],
-    "description": "Multi-line while loop"
+    "description": "While loop (multi-line)"
   },
   "foreach …,… do …": {
     "prefix": "foreach",
     "body": [
       "foreach ${1:element}, ${2:variable} do ${0:statement}"
     ],
-    "description": "Single-line foreach without element index"
+    "description": "Foreach without element index (single-line)"
   },
   "foreach …,… do begin … endforeach": {
     "prefix": "foreach",
@@ -93,14 +93,14 @@
       "\t${0:statement}",
       "endforeach"
     ],
-    "description": "Multi-line foreach without element index"
+    "description": "Foreach without element index (multi-line)"
   },
   "foreach …,…,… do …": {
     "prefix": "foreach",
     "body": [
       "foreach ${1:element}, ${2:variable}, ${3:index} do ${0:statement}"
     ],
-    "description": "Single-line foreach with element index"
+    "description": "Foreach with element index (single-line)"
   },
   "foreach …,…,… do begin … endforeach": {
     "prefix": "foreach",
@@ -109,6 +109,34 @@
       "\t${0:statement}",
       "endforeach"
     ],
-    "description": "Multi-line foreach with element index"
+    "description": "Foreach with element index (multi-line)"
+  },
+  "function …,…": {
+    "prefix": "function",
+    "body": [
+      "function ${1:name}",
+      "\t${0:statement}",
+      "\treturn, ",
+      "end"
+    ],
+    "description": "Function definition"
+  },
+  "pro …": {
+    "prefix": "pro",
+    "body": [
+      "pro ${1:name}",
+      "\t${0:statement}",
+      "end"
+    ],
+    "description": "Procedure definition (no parameters)"
+  },
+  "pro …,…": {
+    "prefix": "pro",
+    "body": [
+      "pro ${1:name}, ${2:parameters}",
+      "\t${0:statement}",
+      "end"
+    ],
+    "description": "Procedure definition (with parameters)"
   }
 }

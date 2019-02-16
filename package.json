@@ -2,7 +2,7 @@
     "name": "vscode-idl",
     "displayName": "IDL",
     "description": "IDL language extension for Microsoft Visual Studio Code",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "kuravih",
     "license": "MIT",
     "author": {
@@ -16,7 +16,7 @@
     },
     "preview": true,
     "homepage": "https://github.com/kuravih/vscode-idl",
-    "icon": "images/logo.svg",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.12.0"
     },
