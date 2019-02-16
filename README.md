@@ -4,6 +4,10 @@ Simple language extension for Microsoft Visual Studio Code using the idl grammar
 
 ## Release Notes
 
+### 0.1.2
+
+Version matching across github and vscode marketplace.
+
 ### 0.1.0
 
 Updates to brackets and snippets.
