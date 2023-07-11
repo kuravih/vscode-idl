@@ -1,3 +1,5 @@
+This plugin is no longer maintained. Please consider the official extension [IDL for VSCode](https://marketplace.visualstudio.com/items?itemName=IDL.idl-for-vscode)
+
 # IDL Language extension for Microsoft Visual Studio Code
 
 Simple language extension for Microsoft Visual Studio Code using the idl grammar from textmate bundle from [idl.tmbundle](https://github.com/mgalloy/idl.tmbundle) by @mgalloy
